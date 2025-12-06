@@ -1,7 +1,6 @@
-
-outputdir = "%{cfg.system}/%{cfg.buildcfg}"
-build_directory = "bin/builds/" ..outputdir.. "/%{prj.name}"
-intermediates_directory = "bin/intermediates/" ..outputdir.. "/%{prj.name}"
+base_dir = "bin"
+output_dir = (base_dir .. "/builds")
+intermediates_dir = (base_dir .. "/intermediates")
 
 project "glad"
 	kind "StaticLib"
@@ -9,8 +8,8 @@ project "glad"
 	systemversion "latest"
 	staticruntime "On" 
 
-	targetdir (build_directory)
-	objdir (intermediates_directory)
+    targetdir (output_dir .. "/%{cfg.system}_%{cfg.buildcfg}")
+    objdir (intermediates_dir .. "/%{cfg.system}")
 
 	files
 	{
