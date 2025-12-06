@@ -3,7 +3,7 @@ outputdir = "%{cfg.system}/%{cfg.buildcfg}"
 build_directory = "bin/builds/" ..outputdir.. "/%{prj.name}"
 intermediates_directory = "bin/intermediates/" ..outputdir.. "/%{prj.name}"
 
-project "Glad"
+project "glad"
 	kind "StaticLib"
 	language "C"
 	systemversion "latest"
