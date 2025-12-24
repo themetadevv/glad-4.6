@@ -1,6 +1,6 @@
 base_dir = "bin"
-output_dir = (base_dir .. "/builds")
-intermediates_dir = (base_dir .. "/intermediates")
+output_dir = (base_dir .. "/glad/builds")
+intermediates_dir = (base_dir .. "/glad/intermediates")
 
 project "glad"
 	kind "StaticLib"
