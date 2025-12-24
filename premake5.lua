@@ -1,6 +1,5 @@
-base_dir = "bin"
-output_dir = (base_dir .. "/glad/builds")
-intermediates_dir = (base_dir .. "/glad/intermediates")
+glad_prj_output_dir = ("bin/glad/builds")
+glad_prj_intermediates_dir = ("bin/glad/intermediates")
 
 project "glad"
 	kind "StaticLib"
@@ -8,8 +7,8 @@ project "glad"
 	systemversion "latest"
 	staticruntime "off" 
 
-    targetdir (output_dir .. "/%{cfg.system}_%{cfg.buildcfg}")
-    objdir (intermediates_dir .. "/%{cfg.system}")
+    targetdir (glad_prj_output_dir .. "/%{cfg.system}_%{cfg.buildcfg}")
+    objdir (glad_prj_intermediates_dir .. "/%{cfg.system}")
 
 	files
 	{
