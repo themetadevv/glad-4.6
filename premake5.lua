@@ -6,7 +6,7 @@ project "glad"
 	kind "StaticLib"
 	language "C"
 	systemversion "latest"
-	staticruntime "On" 
+	staticruntime "off" 
 
     targetdir (output_dir .. "/%{cfg.system}_%{cfg.buildcfg}")
     objdir (intermediates_dir .. "/%{cfg.system}")
