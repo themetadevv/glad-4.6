@@ -1,7 +1,7 @@
 glad_prj_output_dir = ("bin/glad/builds")
 glad_prj_intermediates_dir = ("bin/glad/intermediates")
 
-project "sbmds/glad"
+project "submodules/glad"
 	kind "StaticLib"
 	language "C"
 	systemversion "latest"
