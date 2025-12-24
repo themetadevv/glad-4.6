@@ -1,5 +1,5 @@
-glad_prj_output_dir = ("bin/glad/builds")
-glad_prj_intermediates_dir = ("bin/glad/intermediates")
+glad_prj_output_dir = ("submodules/bin/glad/builds")
+glad_prj_intermediates_dir = ("submodules/bin/glad/intermediates")
 
 project "glad"
 	location "submodules"
@@ -15,7 +15,7 @@ project "glad"
 	{
 		"submodules/include/glad/glad.h",
 		"submodules/include/KHR/khrplatform.h",
-		"src/glad.c"
+		"submodules/src/glad.c"
 	}
 
 	includedirs {
