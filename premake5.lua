@@ -12,13 +12,13 @@ project "submodules/glad"
 
 	files
 	{
-		"include/glad/glad.h",
-		"include/KHR/khrplatform.h",
+		"submodules/include/glad/glad.h",
+		"submodules/include/KHR/khrplatform.h",
 		"src/glad.c"
 	}
 
 	includedirs {
-		"include"
+		"submodules/include"
 	}
 
 	filter "configurations:Debug"
