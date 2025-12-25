@@ -1,25 +1,21 @@
-glad_prj_output_dir = ("submodules/bin/glad/builds")
-glad_prj_intermediates_dir = ("submodules/bin/glad/intermediates")
-
 project "glad"
-	location "submodules"
 	kind "StaticLib"
 	language "C"
 	systemversion "latest"
 	staticruntime "off" 
 
-    targetdir (glad_prj_output_dir .. "/%{cfg.system}_%{cfg.buildcfg}")
-    objdir (glad_prj_intermediates_dir .. "/%{cfg.system}")
+    targetdir ("bin/glad/builds/%{cfg.system}_%{cfg.buildcfg}")
+    objdir ("bin/glad/intermediates/%{cfg.system}")
 
 	files
 	{
-		"submodules/include/glad/glad.h",
-		"submodules/include/KHR/khrplatform.h",
-		"submodules/src/glad.c"
+		"include/glad/glad.h",
+		"include/KHR/khrplatform.h",
+		"src/glad.c"
 	}
 
 	includedirs {
-		"submodules/include"
+		"include"
 	}
 
 	filter "configurations:Debug"
